@@ -32,7 +32,7 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           activate-environment: molsim-testing
-          python-version: 3.7
+          python-version: 3.9
       - name: Install dependencies with anaconda
         run: |
           conda env update -f conda.yml --name molsim-testing
